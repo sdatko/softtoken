@@ -31,7 +31,7 @@ CONFIG_FILE = '.softtoken.conf'
 
 def load_config():
     dir_path = path.join(path.expanduser('~'), CONFIG_FILE)
-    cfg = configparser.SafeConfigParser()
+    cfg = configparser.ConfigParser()
     cfg.read(dir_path)
     return cfg
 
